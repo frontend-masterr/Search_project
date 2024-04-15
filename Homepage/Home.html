@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="stylesheet" type="text/css" href="Homeresponsive.css">
+    <link rel="icon" type="image/png" href="/logo/logo.jpeg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigation--header">
+
+            <div class="left-nav">
+                <img src="/logo/logo.jpeg" class="logo" alt="logo">
+            </div>
+
+            <div class="center-nav">
+
+                <ul class="center-nav--ul">
+                    <li class="center-nav--li">
+                        <a href="Home.html" class="center-nav--li__menu">خانه</a>
+                    </li>
+
+                    <li class="center-nav--li">
+                        <a href="/employears/employears.html" class="center-nav--li__menu">کارفرما</a>
+                    </li>
+
+                    <li class="center-nav--li">
+                        <a href="/freelancer/freelancer.html" class="center-nav--li__menu">فریلنسر</a>
+                    </li>
+
+                    <li class="center-nav--li">
+                        <a href="/About_us/aboutus.html" class="center-nav--li__menu">درباره ما</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="right-nav">
+                <div class="link-nav">
+                    <a href="/sign-in/sign-in.html" class="center-nav--li  center-nav-sign">ثبت نام</a>
+
+                    <a href="/log-in/log-in.html" class="center-nav--li  center-nav-enter">ورود</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <!--main page home-->
+
+    <main class="main">
+        <div class="right-main">
+            <img src="/logo/header-img.svg" class="logo-main" alt="logo-main">
+        </div>
+
+        <div class="left-main">
+
+            <div class="left-main__text">
+                <p class="big-left__text_title">سرچ پروجکت چیکار میکنه ؟</p>
+                <p class="big-left__text"><span class="search_project">سرچ پروجکت</span> اولین پلتفرم تخصصی ایران که کارفرما فریلنسر اختصاصی خودش را پیدا می کند و کارفرما میتواند با اطمینان خاطر بیشتری پروژه اش را بیرون سپاری کند همچنین کارفرما برای اطمیمان بیشتر میتواند رزومه فریلنسر را مورد برسی قرار داده و همچنین برای ایجاد رقابت میان کارفرمایان فریلنسرها می توانند به کارفرماها امتیاز بدهند و همچنین سرچ پروجکت بر کارفرما نظارت داشته تا مشکلی در پرداخت برای فریلنسر به وجود نیایید همچنین برترین کارفرمایان از طریق امتیاز دهی فریلنسر ها لیست خواهند شد و به مخاطبین نشان داده می شود
+                    سرچ پروجکت راه حلی برای تمام پروژه های شما</p>
+            </div>
+
+            <div class="container">
+                <input type="text" id="box" placeholder="چیزی بنویسید" class="search__box">
+                <i class="fas fa-search search__icon" id="icon" onclick="toggleShow()"></i>
+            </div>
+        </div>
+    </main>
+
+    <div class="first-componnet">
+        <div class="first-componnet--top">
+            <div class="first-componnet--top__title">چه پروژه هایی را می توانید از سرچ پروجکت بگیرید</div>
+        </div>
+
+        <!--Background what we can do-->
+
+        <div class="first-componnet--bottom">
+            <div class="first-componnet--bottom__card">
+                <div class="first-componnet--bottom__card-top">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="first-componnet--bottom__card-middle">
+                    <h3 class="first-componnet--bottom-title">فرانت اند</h3>
+                    <p class="first-componnet--bottom-parag"> برای کسب و
+کار خود وبسایت داشته باشید تا مطرح شویدو درآمد بیشتری داشته باشید
+                    </p>
+                </div>
+                <div class="first-componnet--bottom__card-bottom">
+                    <a href="#" class="first-componnet--bottom_card-button">
+                        مشاهده نمونه ها
+                    </a>
+                </div>
+            </div>
+
+            <div class="first-componnet--bottom__card">
+                <div class="first-componnet--bottom__card-top">
+                    <i class="bi bi-database-fill"></i>
+                </div>
+                <div class="first-componnet--bottom__card-middle">
+                    <h3 class="first-componnet--bottom-title">بک اند و دیتابیس</h3>
+                    <p class="first-componnet--bottom-parag">
+                        برای مدیریت وبسایت و داده های خود می توانید پروژه خودتان را به برنامه نویس بک اند بسپارید
+                    </p>
+                </div>
+                <div class="first-componnet--bottom__card-bottom">
+                    <a href="#" class="first-componnet--bottom_card-button">
+                        مشاهده نمونه ها
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="first-componnet--bottom__card">
+                <div class="first-componnet--bottom__card-top">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="first-componnet--bottom__card-middle">
+                    <h3 class="first-componnet--bottom-title">سئو</h3>
+                    <p class="first-componnet--bottom-parag">
+                        رتبه یک جست و جو کسب و کار خود شوید تا بتوانید پروژه های بیشتری کسب کنید 
+                    </p>
+                </div>
+                <div class="first-componnet--bottom__card-bottom">
+                    <a href="#" class="first-componnet--bottom_card-button">
+                        مشاهده نمونه ها
+                    </a>
+                </div>
+            </div>
+
+            <div class="first-componnet--bottom__card">
+                <div class="first-componnet--bottom__card-top">
+                    <i class="bi bi-wordpress"></i>
+                </div>
+                <div class="first-componnet--bottom__card-middle">
+                    <h3 class="first-componnet--bottom-title">وردپرس</h3>
+                    <p class="first-componnet--bottom-parag">
+                         وبسایت هایی با قالب آماده و آسان برای راحتی درآمد کسب و کار شما و دیده شدن شما
+                    </p>
+                </div>
+                <div class="first-componnet--bottom__card-bottom">
+                    <a href="#" class="first-componnet--bottom_card-button">
+                        مشاهده نمونه ها
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="first-componnet--bottom__card">
+                <div class="first-componnet--bottom__card-top">
+                    <i class="bi bi-file-earmark-fill"></i>
+                </div>
+                <div class="first-componnet--bottom__card-middle">
+                    <h3 class="first-componnet--bottom-title">تولید محتوا</h3>
+                    <p class="first-componnet--bottom-parag">
+                        کلید اصلی پیشرفت شما دیده شدن شما در کسب و کارتان و البته پروژه های شما 
+                    </p>
+                </div>
+                <div class="first-componnet--bottom__card-bottom">
+                    <a href="#" class="first-componnet--bottom_card-button">
+                        مشاهده نمونه ها
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="first-componnet--bottom__card">
+                <div class="first-componnet--bottom__card-top">
+                    <i class="bi bi-camera-reels-fill"></i>
+                </div>
+                <div class="first-componnet--bottom__card-middle">
+                    <h3 class="first-componnet--bottom-title">عکس و ویدیو</h3>
+                    <p class="first-componnet--bottom-parag">
+                        با استخدام عکاس و تدوینگر ویدویو و عکس های به یادماندنی از خودتان داشته باشید
+                    </p>
+                    
+                </div>
+                <div class="first-componnet--bottom__card-bottom">
+                    <a href="#" class="first-componnet--bottom_card-button">
+                        مشاهده نمونه ها
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    <div class="link">
+        <a href="/employears/employears.html" class="link--button">همین حالا در جستجوی فریلنسر باشید</a>
+    </div>
+    </div>
+
+    <div class="find--freelancer">
+        <h1 class="big-find--text">فریلنسر خودت رو پیدا کن</h1>
+        <p class="text-freelancer">ما در این وبسایت سعی کرده ایم تا جای ممکن فریلنسر و کارفرما کم ترین مشکل و بیشترین راحتی ممکن را داشته باشند از این رو هم فریلنسر و هم کارفرما بیشترین سود ممکن را می کنند و کمترین مخاطراتی همچون عدم توافق و ... را حس کنند تمامی افراد  سرچ پروجکت سعی خواهند کرد تا بیشترین آسایش را برای هر دو گروه فراهم سازند پس با وبسایت ما به راحتی پروژهای خودتان را بیرون سپاری کنید تا به بهترین کیفیت پروژه های خودتان را تحویل بگیرید اما سایت ما دقیقا چگونه کار می کند؟ ما دریافتیم که مممکن است گاهی اوقات فریلنسر پروژه را با کیفیت مطلوب به اتمام نرساند پس ما حق بیرون سپاری و پروژه دادن را به فریلنسر را به عهده کارفرما گذاشته ایم تا رزومه فریلنسر را چک کند و شخصا با او ارتباط بگیرد و بعد از آن پروژه را بیرون سپاری کند </p>
+        
+        <div class="find--freelancer--box">
+            <div class="find--freelancer--box__right">کارفرما
+            <p class="find--freelancer__main--text">در این صفحه شما می توانید به عنوان کارفرما (مالک پروژه) ثبت نام کنید و از این صفحه به عنوان یک صفحه ارتباطی با دیگران استفاده نمایید همچنین با ایحاد این صفحه امکان همکاری با نیروی متخصص را خواهید داشت و می توانید تمامی فریلنسر ها را مشاهده کنید و تمامی نمونه کار ها را بر اساس سلیقه خود فیلتر کنید</p>
+
+                <div class="link--employer">
+                    <a class="link--employer--text" href="/employears/employears.html">ثبت نام کارفرما</a>
+                </div>
+
+            </div>
+
+            <div class="find--freelancer--box__left">فریلنسر
+                <p class="find--freelancer__main--text">در این صفحه شما می توانید به عنوان فریلنسر(جویای کار) ثبت نام بکنید و از این صفحه به عنوان یک صفحه ارتباطی با دیگران استفاده نمایید هم چنین با ایجاد این صفحه امکان دیدن کارفرما های متفاوت و انوع پروژهای آنان را دارید همچنین شما می توانید با عضو شدن در این صفحه مهارت خود را دسته بندی کنید</p>
+
+                <div class="link--freelancer">
+                    <a class="link--freelancer--text" href="/freelancer/freelancer.html">ثبت نام فریلنسر</a>
+                </div>
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to contact us -->
+
+    <main class="flexbox-col">
+
+        <div class="form-wrapper">
+          <form id="form" method="post" name="emailform" action="email.php">
+            <h3 class="form-title">ارتباط با ما</h3>
+            <p class="form-undertitle">اگر انتقاد و پیشنهادی دارید ما را در میان بگذارید</p>
+            <div class="form-input-grid">
+              <div>
+                <p class="form-text">نام کاربری</p>
+                <div class="form-input-wrapper flexbox-left">
+                  <i class="uil uil-user"></i>
+                  <input class="form-input" id="uname" name="uname" type="text" placeholder="Username" aria-label="" required>
+                </div>
+              </div>
+              <div>
+              <p class="form-text">پسورد</p>
+              <div class="form-input-wrapper flexbox-left">
+                <i class="uil uil-asterisk"></i>
+                <input class="form-input" id="pword" name="pword" type="password" placeholder="Password" aria-label="" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">ایمیل</p>
+            <div class="form-input-wrapper flexbox-left">
+              <i class="uil uil-at"></i>
+              <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
+            </div>
+          </div>
+          <div class="form-input-max">
+            <p class="form-text">پیام</p>
+            <div id="textarea" class="form-input-wrapper flexbox-left-start">
+              <i class="uil uil-comment-dots"></i>
+              <textarea class="form-input" id="message" name="message" placeholder="Your message" maxlength="500" aria-label="" required></textarea>
+            </div>
+           </div>
+           <div class="form-input-max flexbox-left">
+            <div class="button-wrapper">
+              <button id="form-button" type="submit" class="button btn-primary"><i class="uil uil-envelope-heart"></i> Send<div class="btn-secondary"></div></button>
+             </div>
+           </div>
+         </form>
+        </div>
+      
+      </main>
+
+    <!-- copyright -->
+
+      <footer class="footer">
+        <div class="footer-right">
+            <p class="footer-right--text"> © کلیه حقوق این وبسایت برای <a href="#"
+                style="text-decoration: none; color: rgb(0, 60, 255);">سرچ
+                پروجکت</a> است</p>
+        </div>
+
+        <div class="footer--left">
+            <a href="#">
+                <i class="bi bi-envelope-fill footer-component-icons"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-twitter footer-component-icons"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-linkedin footer-component-icons"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-instagram footer-component-icons"></i>
+            </a>
+        </div>
+
+      </footer>
+    
+<script src="Home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --primery-color: #4FC3F7;
+    --second--primery-color:#1e88E5;
+    --light-blue:#0077b6;
+    --font-family: "Vazirmatn";
+    --originaly-blue:#03A9F4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vazirmatn";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    font-style: normal;
+    font-weight: normal;
+    src: url(/Vazirmatn-Font/Vazirmatn-VariableFont_wght.ttf) format('ttf');
+}
+
+.header{
+    background-color: #fff;
+    padding-top: 1rem;
+}
+
+.navigation--header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 6rem;
+}
+
+.center-nav--ul{
+    display: flex;
+    gap: 8rem;
+}
+
+
+.center-nav--li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.center-nav--li__menu:hover{
+    color: rgb(27, 177, 177);
+    transition: 0.2s all ease-in;
+}
+
+.link-nav{
+    display: flex;
+    gap: 5rem;
+    color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.center-nav-sign{
+    background-color: #fff;
+    color: #4CAF50;
+    border-radius: 1rem;
+    padding: 0.4rem
+}
+
+.center-nav-enter{
+    color: #EF5350;
+    padding: 0.4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dadada;
+    border-radius: 4rem;
+    padding: 1rem;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-right: 50rem;
+    margin-top: 8rem;
+}
+
+
+
+.search__box {
+    width: 0rem;
+    height: 4rem;
+    background: none;
+    color: #000;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    position: relative;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    margin-right: 3.3rem;
+}
+  
+  
+.search__icon {
+    box-sizing: border-box;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-left: .8rem;
+    margin-top: 0;
+    cursor: pointer;
+    position: absolute;
+    color: #fa983a;
+    transition: all .25s ease-in;
+    padding: .7rem;
+    border-radius: 50%;
+}
+  
+.container:hover > .search__box {
+    width: 85%;
+    padding: 0 1rem;
+}
+  
+.container:hover > .search__icon {
+    background-color: #eee;
+}
+  
+.show {
+    width: 85%;
+    border: 1px solid red;
+}
+  
+.first-component-menue {
+    display: flex;
+}
+
+
+
+/* .logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.bi-list {
+    margin-right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.bi-x-lg {
+    margin-right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+} */
+
+/* .menue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menue-items {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.menue-items:hover {
+    color: #000000;
+}
+
+.second-component-menue {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.sign-item {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c9f45;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+}
+
+
+.enter-item {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4768b1;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.second-component-menue>* {
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.container-searchbox {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.filter-box {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 350px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: 'vazirmatn';
+}
+
+.bi-search {
+    font-size: 16px;
+    color: #373737;
+}
+
+.bi-search:hover {
+    color: #4768b1;
+}
+
+.button {
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid #000; 
+    cursor: pointer;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.box-components {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.select {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    font-family: 'vazirmatn';
+    font-size: 16px;
+    border-right: 1px solid #3333332a;
+    padding-right: 10px;
+    width: 120px;
+    display: flex;
+}
+
+.select>* {
+    color: #333;
+}
+
+.box-component {
+    width: 550px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: #fff;
+    box-shadow: rgba(64, 64, 64, 0.286) 0px 2px 8px 0px;
+}
+
+.box-component-right {
+    width: 250px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 2px solid rgba(0, 0, 0, 0.074); */
+    display: flex;
+    flex-direction: column;
+}
+.img-right-top {
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.right-top {
+    width: 100%;
+    height: 30%;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.074);
+    border-top-right-radius: 10px; */
+    display: flex;
+    justify-content: center;
+}
+
+.right-bottom {
+    width: 100%;
+    height: 70%;
+    border-bottom-right-radius: 10px;
+    display: flex;
+}
+
+.box-component-left {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.box-bottom-right {
+    width: 250px;
+    height: 80%;
+    /* border-top-left-radius: 10px; */
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: -2rem;
+}
+
+.box-left-top {
+    height: 85%;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.box-left-bottom {
+    height: 15%;
+    width: 250px;
+    /* border-top: 2px solid rgba(0, 0, 0, 0.074);
+    border-bottom-left-radius: 10px; */
+    display: flex;
+    align-items: center;
+    direction: ltr;
+}
+
+
+
+.title-box {
+    color: var(--black);
+    margin-top: 2rem;
+}
+
+.title-box:hover {
+    color: #080f76b5;
+}
+
+.title-link {
+    text-decoration: none;
+}
+
+.link-information {
+    text-decoration: none;
+    color: #4768b1;
+}
+
+.link-information__info{
+    margin-top: 2rem;
+}
+
+.hashtag {
+    padding-left: 10px;
+    color: #00000096;
+}
+
+.parag{
+
+}
+.title-parag {
+    color: #000000cd;
+    text-align: justify;
+}
+
+.ul-box {
+    color: #00000096;
+}
+
+.price,
+.time-project,
+.skills-title {
+    font-size: 18px;
+    color: #313030db;
+    font-weight: 500;
+}
+
+.date-release {
+    color: #00000070;
+}
+
+.skills {
+    color: #2c8333e8;
+}
+
+.footer-component {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid rgba(28, 28, 28, 0.058);
+    padding-top: 18px;
+}
+
+.footer-component-right-text{
+    margin-top: 10px;
+    line-height: 2px;
+    font-family: "Vazirmatn";
+}
+
+.footer-component-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-left: 40px;
+}
+
+.footer-component-left>* {
+    text-decoration: none;
+    color: #0000009e;
+}
+
+.footer-component-icons {
+    font-size: 25px;
+    margin: 17px;
+}
+
+.bi-instagram {
+    color: #d6249f;
+}
+
+.bi-linkedin {
+    color: #02659a;
+}
+
+.bi-twitter {
+    color: #038ad2;
+}
+
+.bi-envelope-fill {
+    color: #d20101bf;
+}
+
+.footer-component-right {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.footer-component-right-text {
+    color: #00000099;
+    font-size: 16px;
+}

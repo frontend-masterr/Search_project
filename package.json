@@ -1,0 +1,14 @@
+{
+  "name": "search-project",
+  "version": "1.0.0",
+  "description": "this is the package.json",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "search-project",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

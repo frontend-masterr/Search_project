@@ -1,0 +1,258 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --primery-color: #4FC3F7;
+    --second--primery-color:#1e88E5;
+    --light-blue:#0077b6;
+    --font-family: "Vazirmatn";
+    --originaly-blue:#03A9F4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vazirmatn";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    font-style: normal;
+    font-weight: normal;
+    src: url(/Vazirmatn-Font/Vazirmatn-VariableFont_wght.ttf) format('ttf');
+}
+
+.header{
+    background-color: #fff;
+    padding-top: 1rem;
+}
+
+.navigation--header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 6rem;
+}
+
+.center-nav--ul{
+    display: flex;
+    gap: 8rem;
+}
+
+
+.center-nav--li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.center-nav--li__menu:hover{
+    color: rgb(27, 177, 177);
+    transition: 0.2s all ease-in;
+}
+
+.link-nav{
+    display: flex;
+    gap: 5rem;
+    color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.center-nav-sign{
+    background-color: #fff;
+    color: #4CAF50;
+    border-radius: 1rem;
+    padding: 0.4rem
+}
+
+.center-nav-enter{
+    color: #EF5350;
+    padding: 0.4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-component-menue {
+    display: flex;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.bi-list {
+    margin-right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.bi-x-lg {
+    margin-right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menue-items {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.menue-items:hover {
+    color: #000000;
+}
+
+.second-component-menue {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.sign-item {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c9f45;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.enter-item {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4768b1;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.second-component-menue>* {
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.first-component {
+    display: flex;
+    height: 80vh;
+}
+
+.first-component_right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-right: 40px;
+    flex-direction: column;
+}
+
+.first-component-title{
+    padding-bottom: 10px;
+}
+
+.first-component_text {
+    line-height: 2;
+}
+
+.first-component_left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-img {
+    display: block;
+    margin-top: 50px;
+}
+
+.footer{
+    display: flex;
+    height: 10vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.152);
+}
+
+.footer-right{
+    width: 50%;
+}
+
+.footer-right--text{
+    margin-top: 2rem;
+}
+
+.footer--left{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-left: 4rem;
+    font-size: 25px;
+}
+
+.bi-envelope-fill{
+    color: #d20101bf;
+}
+
+.footer-component-icons{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.bi-twitter{
+    color: #038ad2;
+}
+
+.bi-linkedin{
+    color: #02659a;
+}
+
+.bi-instagram{
+    color: #d6249f;
+}

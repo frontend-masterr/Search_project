@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vazirmatn";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    font-style: normal;
+    font-weight: normal;
+    src: url(/Vazirmatn-Font/Vazirmatn-VariableFont_wght.ttf) format('ttf');
+}
+
+.header{
+    background-color: #fff;
+    padding-top: 1rem;
+}
+
+.navigation--header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 6rem;
+}
+
+.center-nav--ul{
+    display: flex;
+    gap: 8rem;
+}
+
+
+.center-nav--li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.center-nav--li__menu:hover{
+    color: rgb(27, 177, 177);
+    transition: 0.2s all ease-in;
+}
+
+.link-nav{
+    display: flex;
+    gap: 5rem;
+    color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.center-nav-sign{
+    background-color: #fff;
+    color: #4CAF50;
+    border-radius: 1rem;
+    padding: 0.4rem
+}
+
+.center-nav-enter{
+    color: #EF5350;
+    padding: 0.4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-component-menue {
+    display: flex;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.bi-list {
+    margin-right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
+
+.bi-x-lg {
+    margin-right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menue-items {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.menue-items:hover {
+    color: #000000;
+}
+
+.second-component-menue {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.sign-item {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3c9f45;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.enter-item {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4768b1;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 60px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.second-component-menue>* {
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.box-components{
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+}
+
+.box-component{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-box--second{
+    margin-bottom: 190px;
+}
+
+.top-box{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.box-components{
+
+}
+
+.box-component{
+
+}
+
+.top-box{
+
+}
+
+.img{
+
+}
+
+.contanier> *{
+    margin-top: 7px;
+}
+
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box-component:hover{
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+}
+
+.bottom-box__text{
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,209,167,1) 0%, rgba(0,140,23,0.5130427170868348) 90%);
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.biuld-project{
+
+}
+
+.score{
+
+}
+
+.expert{
+
+}
+
+.hastag{
+   
+}
+
+
+.bottom-box{
+    /* width: 300px;
+    display: flex; */
+}
+
+.hashtag{
+   
+}
+
+.footer{
+    display: flex;
+    height: 10vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.152);
+}
+
+.footer-right{
+    width: 50%;
+}
+
+.footer-right--text{
+    margin-top: 2rem;
+}
+
+.footer--left{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-left: 4rem;
+    font-size: 25px;
+}
+
+.bi-envelope-fill{
+    color: #d20101bf;
+}
+
+.footer-component-icons{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.bi-twitter{
+    color: #038ad2;
+}
+
+.bi-linkedin{
+    color: #02659a;
+}
+
+.bi-instagram{
+    color: #d6249f;
+}
