@@ -1,0 +1,108 @@
+// ایجاد مجموعه users
+db.createCollection("users", {
+  validator: {
+    $jsonSchema: {
+      required: ["username", "email", "password", "first_name", "last_name", "phone_number", "bank_account_number", "bank_name"],
+      properties: {
+        username: {
+          type: "string",
+          unique: true
+        },
+        email: {
+          type: "string",
+          unique: true
+        },
+        password: {
+          type: "string",
+          minLength: 6
+        },
+        first_name: {
+          type: "string"
+        },
+        last_name: {
+          type: "string"
+        },
+        phone_number: {
+          type: "string"
+        },
+        bank_account_number: {
+          type: "string"
+        },
+        bank_name: {
+          type: "string"
+        }
+      }
+    }
+  }
+});
+
+// ایجاد مجموعه projects
+db.createCollection("projects", {
+  validator: {
+    $jsonSchema: {
+      required: ["user_id", "project_title", "project_description", "project_status"],
+      properties: {
+        user_id: {
+          type: "objectId",
+          ref: "users"
+        },
+        project_title: {
+          type: "string"
+        },
+        project_description: {
+          type: "string"
+        },
+        project_status: {
+          type: "string"
+        }
+      }
+    }
+  }
+});
+
+// ایجاد مجموعه messages
+db.createCollection("messages", {
+  validator: {
+    $jsonSchema: {
+      required: ["project_id", "sender_id", "recipient_id", "message_content"],
+      properties: {
+        project_id: {
+          type: "objectId",
+          ref: "projects"
+        },
+        sender_id: {
+          type: "objectId",
+          ref: "users"
+        },
+        recipient_id: {
+          type: "objectId",
+          ref: "users"
+        },
+        message_content: {
+          type: "string"
+        }
+      }
+    }
+  }
+});
+
+// ایجاد مجموعه files
+db.createCollection("files", {
+  validator: {
+    $jsonSchema: {
+      required: ["project_id", "file_name", "file_path"],
+      properties: {
+        project_id: {
+          type: "objectId",
+          ref: "projects"
+        },
+        file_name: {
+          type: "string"
+        },
+        file_path: {
+          type: "string"
+        }
+      }
+    }
+  }
+});
