@@ -1,0 +1,20 @@
+db.users.insertMany([
+    {
+        email: "test1@example.com",
+        password: "hashed_password1",
+        firstName: "John",
+        lastName: "Doe",
+        phoneNumber: "1234567890",
+        nationalIdPhoto: "path/to/photo1.jpg",
+        verified: true
+    },
+    {
+        email: "test2@example.com",
+        password: "hashed_password2",
+        firstName: "Jane",
+        lastName: "Doe",
+        phoneNumber: "0987654321",
+        nationalIdPhoto: "path/to/photo2.jpg",
+        verified: false
+    }
+]);
